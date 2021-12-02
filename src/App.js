@@ -7,11 +7,13 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Navbar from './components/navbar/Navbar';
 
 function App() {
   return (
     <>
       <Router>
+      <Navbar/>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -22,9 +24,8 @@ function App() {
         </Route>
 
         <Route exact path="/signup">
-          <Signup />
+          <Signup/>
         </Route>
-
 
       </Switch>
       </Router>
